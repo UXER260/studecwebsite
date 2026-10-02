@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>StuDEC 2027</title>
+
+
+  <link
+          rel="stylesheet"
+          href="{{ url_for('static', path='style.css') }}"
+  >
+
+  <link
+          rel="preconnect"
+          href="https://fonts.googleapis.com"
+  >
+
+  <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin
+  >
+
+  <link
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Raleway:wght@500;600;700&display=swap"
+          rel="stylesheet"
+  >
+</head>
+
+<body>
+
+<div class="hero-wrapper">
+
+  <nav class="navbar" id="navbar">
+
+    <div class="container nav-container">
+
+      <a href="https://www.devrijeruimte.org/" target="_blank"
+         rel="noopener noreferrer" class="logo-link">
+        <img
+                src="{{ url_for('static', path='images/DeVrijeRuimte_vis5.png') }}"
+                alt="De Vrije Ruimte"
+                class="logo"
+        >
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#fees">Registration</a></li>
+        <li><a href="#practical-info">Practical Info</a></li>
+        <li><a href="#programme">Programme</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+      </ul>
+
+      <div class="nav-actions">
+
+        <div class="desktop-actions">
+
+          <button
+                  id="theme-toggle"
+                  class="theme-toggle-btn"
+                  type="button"
+                  aria-label="Toggle Dark Mode"
+          >
+            🌙
+          </button>
+
+          <a href="https://www.devrijeruimte.org/" class="btn-primary nav-btn" target="_blank"
+             rel="noopener noreferrer">
+            Go to Main Site
+          </a>
+
+        </div>
+
+        <button
+                id="mobile-menu-toggle"
+                class="mobile-menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+
+    </div>
+
+    <div id="mobile-menu" class="mobile-menu">
+
+      <a href="#about">About</a>
+      <a href="#fees">Registration</a>
+      <a href="#practical-info">Practical Info</a>
+      <a href="#programme">Programme</a>
+      <a href="#faq">FAQ</a>
+      <a href="#gallery">Gallery</a>
+
+      <button
+              id="mobile-theme-toggle"
+              class="mobile-theme-toggle"
+              type="button"
+      >
+        🌙 Dark Mode
+      </button>
+
+      <a
+              href="https://www.devrijeruimte.org/"
+              class="btn-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+      >
+        Go to Main Site
+      </a>
+
+    </div>
+
+  </nav>
+
+
+  <header class="hero">
+
+    <div class="hero-content">
+
+      <h1>StuDEC 2027</h1>
+      <h1>13-18 of March</h1>
+      <h1>Texel</h1>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <!--      <img-->
+      <!--              src="{{ url_for('static', path='images/IMG_1834-final-768x806.png') }}"-->
+      <!--              alt=""-->
+      <!--              class="hero-sticker"-->
+      <!--      >-->
+
+      <div class="countdown">
+
+        <div class="time-box">
+          <div class="number" id="days">00</div>
+          <div class="label">Days</div>
+        </div>
+
+        <div class="colon">:</div>
+
+        <div class="time-box">
+          <div class="number" id="hours">00</div>
+          <div class="label">Hours</div>
+        </div>
+
+        <div class="colon">:</div>
+
+        <div class="time-box">
+          <div class="number" id="minutes">00</div>
+          <div class="label">Minutes</div>
+        </div>
+
+        <div class="colon">:</div>
+
+        <div class="time-box">
+          <div class="number" id="seconds">00</div>
+          <div class="label">Seconds</div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+</div>
+
+
+<section class="quote-banner">
+
+  <p>
+    An international gathering of students from democratic schools
+  </p>
+
+</section>
+
+
+<!-- Welcome / About Section -->
+
+<section id="about" class="section container">
+
+  <h2 class="section-title">
+    Welcome to StuDEC 2027!
+  </h2>
+
+  <!--  <h3 class="section-subtitle">-->
+  <!--    Inspirerende tekst hier-->
+  <!--  </h3>-->
+
+  <p class="text-block center-text">
+    Welcome to the official website of StuDEC 2027 on Texel, an island of the coast of the Netherlands
+  </p>
+
+  <!--  <div class="two-col-layout">-->
+
+  <!--    <div class="col">-->
+
+  <!--      <h4 class="sub-heading">-->
+  <!--        Vast iets hier-->
+  <!--      </h4>-->
+
+  <!--      <p>-->
+  <!--        Informatie of-->
+  <!--      </p>-->
+
+  <!--      <p>-->
+  <!--        intruductie of zo-->
+  <!--      </p>-->
+
+  <!--    </div>-->
+
+  <!--    <div class="col">-->
+
+  <!--      <h4 class="sub-heading">-->
+  <!--        Bullshit-->
+  <!--      </h4>-->
+
+  <!--      <p>-->
+  <!--        Inspirerende tekst hier-->
+  <!--      </p>-->
+
+  <!--      <p>-->
+  <!--        Meer-->
+  <!--      </p>-->
+
+  <!--    </div>-->
+
+  <!--  </div>-->
+
+  <div class="callout-box">
+
+    <h4>
+      Come join us if you want to:
+    </h4>
+
+    <ul class="custom-list">
+      <li>Meet great people from democratic schools across Europe and beyond</li>
+      <li>Share ideas, experiences and perspectives</li>
+      <li>Take part in workshops and Open Space activities</li>
+      <li>Participate in creating the history of democratic schools</li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- Registration Fees -->
+
+<section id="fees" class="section bg-gray">
+
+  <div class="container">
+
+    <h2 class="section-title">
+      Registration
+    </h2>
+
+
+    <h3 class="section-subtitle">
+      Registration fees
+    </h3>
+
+    <div class="fees-grid">
+
+<!--      <article class="fee-card">-->
+
+<!--        <h3>-->
+<!--          SUMMER-discount-->
+<!--        </h3>-->
+
+<!--        <p class="price">-->
+<!--          €275-->
+<!--        </p>-->
+
+<!--        <p>-->
+<!--          Until September 15-->
+<!--        </p>-->
+
+<!--      </article>-->
+
+      <article class="fee-card">
+
+        <h3>
+          Early Bird
+        </h3>
+
+        <p class="price">
+          €300
+        </p>
+
+        <p>
+          September 16 to February 1
+        </p>
+
+      </article>
+
+      <article class="fee-card">
+
+        <h3>
+          Normal Bird
+        </h3>
+
+        <p class="price">
+          €325
+        </p>
+
+        <p>
+          February 2 to March 5
+        </p>
+
+      </article>
+
+    </div>
+    <br></br>
+    <p>💜 We want StuDEC to be accessible to everyone. If the cost is a barrier, please contact us before January 20,
+      2027 at <a href="mailto:studec27@devrijeruimte.org">studec27@devrijeruimte.org</a>. We’ll let you know before 1st
+      of
+      February if we can support your participation. </p>
+
+    <br>
+
+<!--       href="https://docs.google.com/forms/d/e/1FAIpQLSdMVul-aAQ8eJiUb4yb9OAXGAQebdNshhz3dji2O1fEpa-JlA/viewform?pli=1&pli=1&pli=1&pli=1"-->
+
+    <a
+            onclick="alert('We are currently working on our administration, registration will open soon.');"
+            style="font-size:18px"
+       class="btn-primary nav-btn" target="_blank"
+       rel="noopener noreferrer">
+    Registration
+    </a><br>
+    We are currently working on our administration, registration will open soon.
+
+  </div>
+
+</section>
+
+
+<!-- Practical Info -->
+
+<section id="practical-info" class="section">
+
+  <div class="container">
+
+    <h2 class="section-title">
+      Practical Information
+    </h2>
+
+    <h3 class="section-subtitle">
+      Everything you need to know
+    </h3>
+
+    <div class="info-grid">
+
+      <article class="info-card">
+
+        <h3>
+          Location
+        </h3>
+
+        <a target="_blank" rel="noopener noreferrer"
+           href="https://www.google.com/maps/place/Stayokay+Hostel+Texel/@53.0496536,4.8028499,17z/data=!4m18!1m8!3m7!1s0x47cf30c73a20a9eb:0x7a4e3e2281358061!2sHaffelderweg+29,+1791+AS+Den+Burg!3b1!8m2!3d53.0496536!4d4.8028499!16s%2Fg%2F11c5f78nd8!3m8!1s0x47cf30c72253abbf:0xe9bf9915abb51aab!5m2!4m1!1i2!8m2!3d53.0495821!4d4.8024838!16s%2Fg%2F1tdwtymt?entry=ttu&g_ep=EgoyMDI2MDkyMi4wIKXMDSoASAFQAw%3D%3D">
+
+          <p>Stayokay Hostel Texel</p>
+          <p>Haffelderweg 29, 1791 AS Texel</p>
+
+        </a>
+
+      </article>
+
+      <article class="info-card">
+
+        <h3>
+          Dates
+        </h3>
+
+        <p>
+          13–18 March 2027.
+        </p>
+
+      </article>
+
+      <article class="info-card">
+
+        <h3>
+          Travel
+        </h3>
+
+        <p>
+          Information about travelling to Texel
+          will be provided here.
+        </p>
+
+      </article>
+
+      <article class="info-card">
+
+        <h3>
+          Accommodation
+        </h3>
+
+        <p>
+          Accommodation information will be
+          provided here.
+        </p>
+
+      </article>
+
+
+      <article class="info-card">
+
+        <h3>
+          Facilitates
+        </h3>
+
+        <p>
+          Facility information will be
+          provided here.
+        </p>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- Programme -->
+
+<section id="programme" class="section bg-gray">
+
+  <div class="container">
+
+    <h2 class="section-title">
+      Programme
+    </h2>
+
+    <h3 class="section-subtitle">
+      What happens during StuDEC?
+    </h3>
+
+    <div class="programme">
+
+      <div class="programme-item">
+
+        <div class="programme-time">
+          Day 1
+        </div>
+
+        <div>
+          <strong>Arrival & Welcome</strong>
+          <p>
+            Arrival, getting settled and meeting
+            the other participants.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="programme-item">
+
+        <div class="programme-time">
+          Day 2
+        </div>
+
+        <div>
+          <strong>Open Space</strong>
+          <p>
+            Workshops, activities and discussions
+            proposed by participants.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="programme-item">
+
+        <div class="programme-time">
+          Day 3
+        </div>
+
+        <div>
+          <strong>Open Space</strong>
+          <p>
+            More workshops, activities and time
+            together.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="programme-item">
+
+        <div class="programme-time">
+          Day 4
+        </div>
+
+        <div>
+          <strong>Activities</strong>
+          <p>
+            Exploring, connecting and creating
+            together.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="programme-item">
+
+        <div class="programme-time">
+          Day 5
+        </div>
+
+        <div>
+          <strong>Final Day</strong>
+          <p>
+            Closing activities and preparing
+            for departure.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- Registration Steps -->
+
+<section class="section">
+
+  <div class="container">
+
+    <h2 class="section-title">
+      How to Register
+    </h2>
+
+    <h3 class="section-subtitle">
+      Three simple steps
+    </h3>
+
+    <div class="steps">
+
+      <article class="step">
+
+        <div class="step-number">
+          01
+        </div>
+
+        <h3>
+          Sign up
+        </h3>
+
+        <p>
+          Complete the registration form and payment.
+        </p>
+
+      </article>
+
+      <article class="step">
+
+        <div class="step-number">
+          02
+        </div>
+
+        <h3>
+          Prepare
+        </h3>
+
+        <p>
+          Get ready for your journey to Texel.
+        </p>
+
+      </article>
+
+      <article class="step">
+
+        <div class="step-number">
+          03
+        </div>
+
+        <h3>
+          Join StuDEC
+        </h3>
+
+        <p>
+          Meet everyone and take part in the event.
+        </p>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FAQ -->
+<section id="faq" class="section bg-gray">
+
+  <div class="container">
+
+    <h2 class="section-title">
+      FAQ
+    </h2>
+
+
+    <details class="faq-container">
+
+      <summary class="section-subtitle">
+        Frequently Asked Questions
+      </summary>
+
+      <div class="faq">
+
+
+        <details>
+          <summary>
+            Where is StuDEC 2027?
+          </summary>
+
+          <p>
+            StuDEC 2027 takes place on Texel, an island in the Netherlands located in the Waddenzee.
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2838.700596374308!2d4.799903512515708!3d53.04958529677018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47cf30c72253abbf%3A0xe9bf9915abb51aab!2sStayokay%20Hostel%20Texel!5e1!3m2!1sen!2snl!4v1790590859000!5m2!1sen!2snl"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            What is StuDEC?
+          </summary>
+
+          <p>
+            StuDEC is an international gathering of students from democratic schools across different countries. It’s a
+            space where participants can share perspectives, spend meaningful time together, and co-create the event
+            through an Open Space format. StuDEC encourages connection, cultural exchange, and openness to diverse
+            viewpoints. Every participant can contribute — by offering workshops, proposing activities, or starting
+            discussions. The event is shaped collectively by the community itself.
+          </p>
+
+          <p>
+            Source:
+            <a href="https://bullerbyn.org.pl/studec/" target="_blank" rel="noopener noreferrer">
+              bullerbyn.org.pl/studec/
+            </a>
+          </p>
+        </details>
+
+
+        <details>
+          <summary>
+            What does “StuDEC” stand for?
+          </summary>
+
+          <p>
+            Students’ Democratic Education Conference.
+          </p>
+        </details>
+
+
+        <details>
+          <summary>
+            What is the core idea behind StuDEC?
+          </summary>
+
+          <p>
+            The core idea of StuDEC is to create a space where students from democratic schools can have fun together,
+            connect, and build meaningful relationships — while also exchanging perspectives and learning from each
+            other.
+            It combines the spirit of fun with collaboration, equality, and student agency — values at the heart of
+            democratic education.
+          </p>
+        </details>
+
+
+        <details>
+          <summary>
+            How did the idea of StuDEC begin?
+          </summary>
+
+          <p>
+            The idea of StuDEC was born in 2022 at the Summerhill Festival in the UK. A group of people noticed that
+            young people’s participation in European and international democratic education spaces was very low.
+            Even though young people are the protagonists of democratic education, the potential these spaces held
+            for them was often left unexplored.
+          </p>
+
+          <p>
+            — Paula, co-founder of the first StuDEC and alumna of the Free School Leipzig, Germany.
+          </p>
+        </details>
+
+
+        <details>
+          <summary>
+            Why was the first StuDEC organized?
+          </summary>
+
+          <p>
+            In 2024, a group of students, alumni, and a teacher from the Free School Leipzig in Germany came together
+            to organize a student-focused gathering for young people in democratic education. The goal was simple:
+            to have fun, connect, and feel part of a wider community.
+          </p>
+
+          <p>
+            — Paula, co-founder of the first StuDEC and alumna of the Free School Leipzig, Germany.
+          </p>
+        </details>
+
+
+        <details>
+          <summary>
+            What was StuDEC 2024 like?
+          </summary>
+
+          <p>
+            StuDEC 2024 brought together around 120 participants from various European countries at the Freie Schule
+            Leipzig. There was baking, dancing, debating, and drawing — and the event ended with a talent show.
+          </p>
+
+          <p>
+            — Paula, co-founder of the first StuDEC and alumna of the Free School Leipzig, Germany.
+          </p>
+        </details>
+
+
+        <details>
+          <summary>
+            What happened at StuDEC 2025?
+          </summary>
+
+          <p>
+            In 2025, a group of students and teachers from Democratic School Sofia brought StuDEC back to life.
+            Around 90 participants gathered in the Vitosha Mountains in Bulgaria. Alongside hiking and skiing,
+            the event included board games, dancing, sword-making, and sword battles.
+          </p>
+
+          <p>
+            — Paula, co-founder of the first StuDEC and alumna of the Free School Leipzig, Germany.
+          </p>
+        </details>
+
+
+        <details>
+          <summary>
+            Which edition of StuDEC is this?
+          </summary>
+
+          <p>
+            This is the third edition of StuDEC.
+          </p>
+
+          <ul>
+            <li>The first StuDEC was held in Leipzig, Germany, in 2024.</li>
+            <li>The second StuDEC took place in Sofia, Bulgaria, in 2025.</li>
+            <li>The third edition took place in Poland in March 2026.</li>
+          </ul>
+        </details>
+
+
+        <details>
+          <summary>
+            Who can participate?
+          </summary>
+
+          <p>
+            Students from democratic schools and related educational communities can participate.
+            StuDEC welcomes participants of all ages, although most participants in previous years were between
+            13 and 18 years old.
+          </p>
+        </details>
+
+
+        <details>
+          <summary>
+            Can I come alone?
+          </summary>
+
+          <p>
+            Students may come on their own, but at least one adult staff member from their democratic school should
+            also attend the event.
+          </p>
+
+          <p>
+            Adult graduates of democratic schools are also welcome to attend independently.
+          </p>
+        </details>
+
+
+        <details>
+          <summary>
+            Will there be adults or staff present?
+          </summary>
+
+          <p>
+            Each participating democratic school should have at least one Group Leader attending with its students.
+            The number of staff should be appropriate to the size of the group and the individual needs of its members,
+            with at least one staff member per 15 students.
+          </p>
+        </details>
+
+
+        <details>
+          <summary>
+            Who is a Group Leader?
+          </summary>
+
+          <p>
+            A Group Leader is an adult staff member who supports students from their democratic school during StuDEC.
+            They help ensure safety, coordinate communication with the organizers when necessary, and can act on behalf
+            of minors in emergency situations when authorized by a parent.
+          </p>
+        </details>
+
+
+        <details>
+          <summary>
+            Do I need my Group Leader’s consent?
+          </summary>
+
+          <p>
+            Yes. The registration form requires the Group Leader’s full name and email address, so they must agree
+            to have their personal data shared with the organizers.
+          </p>
+        </details>
+
+
+        <details>
+          <summary>
+            Do I need to sign anything after registering?
+          </summary>
+
+          <p>
+            Yes. After submitting the registration form, you receive an email containing a participation agreement.
+            The agreement must be signed electronically within 7 days. If you are under 18, it must be signed by
+            your parent or legal guardian.
+          </p>
+        </details>
+
+
+        <details>
+          <summary>
+            How do I pay the participation fee?
+          </summary>
+
+          <p>
+            After receiving confirmation of your registration, you must pay the participation fee within 7 days.
+            Participants from Poland receive a Fiberpay payment link, while participants from other countries receive
+            bank transfer details for payment in EUR.
+          </p>
+        </details>
+
+
+        <details>
+          <summary>
+            What happens if I need to cancel?
+          </summary>
+
+          <p>
+            Cancellations must be sent in writing to
+            <a href="mailto:studec27@devrijeruimte.org">studec27@devrijeruimte.org</a>.
+            A refund is available minus the administrative fee of 15 EUR.
+          </p>
+
+          <p>
+            If you find a suitable replacement, you can transfer your reservation without losing your payment.
+            No refund is available if you simply do not attend without cancelling in advance.
+          </p>
+        </details>
+
+
+        <details>
+          <summary>
+            Are participants insured?
+          </summary>
+
+          <p>
+            Participants who permanently live in Poland are covered by accident insurance during the activity.
+            Participants from other countries are advised to have a European Health Insurance Card (EHIC) or
+            private travel insurance.
+          </p>
+        </details>
+
+
+        <details>
+          <summary>
+            Do I need consent for photos or videos?
+          </summary>
+
+          <p>
+            Not necessarily. After registration, you receive a photo and recording consent statement.
+            If you or your parent do not give consent, you receive a visible marker so that your image can be avoided.
+            Lack of consent does not affect your ability to participate.
+          </p>
+        </details>
+
+
+        <details>
+          <summary>
+            Can I update my registration details?
+          </summary>
+
+          <p>
+            Yes. If your information changes — such as your diet, contact details, Group Leader, or travel plans —
+            email
+            <a href="mailto:studec27@devrijeruimte.org">studec27@devrijeruimte.org</a>
+            as soon as possible.
+          </p>
+        </details>
+
+
+        <details>
+          <summary>
+            Do I need to bring bedding?
+          </summary>
+
+          <p>
+            No. The venue provides all bedding.
+          </p>
+        </details>
+
+
+        <details>
+          <summary>
+            How are rooms assigned?
+          </summary>
+
+          <p>
+            Accommodation is provided in gender-specific rooms. Participants can indicate their preferred gender
+            category during registration and can request to stay with people from their school whom they know.
+            After ~150 registrations, the room assignments can be made and students can give their preference.
+            Room arrangements are coordinated with Group Leaders.
+          </p>
+        </details>
+        <details>
+          <summary>
+            How do you pronounce “Texel”?
+          </summary>
+
+          <p>
+            ‘Texel’ is pronounced ‘Tessel’. It is an island whose name has Frisian origins. Frisians are an indigenous
+            people distinct from the Dutch, with their own language and culture, native to the North Sea coastal region.
+            While most Frisians live in the north of the Netherlands today, their historical homeland included the
+            Frisian Kingdom of Magna Frisia, stretching from southern Scandinavia to Belgium.
+          </p>
+        </details>
+
+
+        <details>
+          <summary>
+            What if my question isn't answered here?
+          </summary>
+
+          <p>
+            Contact the organizing team at
+            <a href="mailto:studec27@devrijeruimte.org">studec27@devrijeruimte.org</a>.
+          </p>
+        </details>
+
+      </div>
+
+    </details>
+
+  </div>
+
+</section>
+
+
+<!-- Support StuDEC -->
+
+<section id="support" class="section">
+
+  <div class="container">
+
+    <h2 class="section-title">
+      Support StuDEC
+    </h2>
+
+    <h3 class="section-subtitle">
+      Help make StuDEC accessible to everyone
+    </h3>
+
+    <div class="callout-box">
+
+      <h4>
+        Support organising StuDEC 2027
+      </h4>
+
+      <p>
+        Participation fees do not cover the costs of organising the event.
+      </p>
+
+      <p>
+        Every contribution, large or small, makes a difference. It helps us support this wonderful initiative, so
+        students from democratic schools across Europe and beyond can get to know each other and create shared
+        experiences together.
+      </p>
+
+      <br>
+
+      <a
+              href="https://www.friendsofdvr.com/en/donate"
+              class="btn-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+      >
+        Donate
+      </a>
+      <br>
+      <br>
+      This link directs to the organizer's funding page. All donations will be used for organising StuDEC.
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- Gallery -->
+
+<section id="gallery" class="section container">
+
+  <h2 class="section-title">
+    Gallery
+  </h2>
+
+  <h3 class="section-subtitle">
+    Memories from StuDEC
+  </h3>
+
+  <div class="gallery-grid">
+
+    <img
+            src="{{ url_for('static', path='images/fit.jpg') }}"
+            alt="Texel sunset"
+    >
+
+    <img
+            src="{{ url_for('static', path='images/images.jpg') }}"
+            alt="Texel"
+    >
+
+    <img
+            src="{{ url_for('static', path='images/lighthouse.avif') }}"
+            alt="StuDEC location"
+    >
+
+  </div>
+
+</section>
+
+
+<!-- Footer -->
+
+<footer>
+
+  <div class="container footer-content">
+
+    <p class="footer-text">
+      © 2027 StuDEC · De Vrije Ruimte<br>
+      <a href="mailto:studec27@devrijeruimte.org">studec27@devrijeruimte.org</a>
+    </p>
+
+
+    <div class="footer-socials">
+
+      <a href="https://www.instagram.com/de_vrije_ruimte/" aria-label="Instagram" target="_blank"
+         rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zM17.5 6.5a1 1 0 1 1-1 1 1 1 0 0 1 1-1z"/>
+        </svg>
+      </a>
+
+      <a href="https://www.facebook.com/devrijeruimte1/" aria-label="Facebook" target="_blank"
+         rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M13.5 22v-9h3l.5-3.5h-3.5V7.3c0-1 .3-1.8 1.9-1.8H17V2.3c-.7-.1-1.6-.2-2.6-.2-2.6 0-4.4 1.6-4.4 4.5v2.9H7v3.5h3V22h3.5z"/>
+        </svg>
+      </a>
+
+      <a href="https://www.linkedin.com/company/de-vrije-ruimte" aria-label="LinkedIn" target="_blank"
+         rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M5 3.5A2.5 2.5 0 1 1 5 8a2.5 2.5 0 0 1 0-4.5zM3 9h4v12H3V9zm6 0h3.8v1.6h.1c.5-.9 1.8-2 3.8-2 4 0 4.7 2.6 4.7 6V21h-4v-5.7c0-1.4 0-3.2-2-3.2s-2.3 1.5-2.3 3.1V21H9V9z"/>
+        </svg>
+      </a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script>
+  /* =========================
+     COUNTDOWN
+     ========================= */
+
+  const targetDate = new Date(
+      "2027-03-13T00:00:00"
+  ).getTime();
+
+  function updateCountdown() {
+
+      const now = Date.now();
+      const distance = targetDate - now;
+
+      const days = Math.max(
+          0,
+          Math.floor(distance / (1000 * 60 * 60 * 24))
+      );
+
+      const hours = Math.max(
+          0,
+          Math.floor(
+              (distance % (1000 * 60 * 60 * 24))
+              / (1000 * 60 * 60)
+          )
+      );
+
+      const minutes = Math.max(
+          0,
+          Math.floor(
+              (distance % (1000 * 60 * 60))
+              / (1000 * 60)
+          )
+      );
+
+      const seconds = Math.max(
+          0,
+          Math.floor(
+              (distance % (1000 * 60))
+              / 1000
+          )
+      );
+
+      document.getElementById("days").textContent =
+          String(days).padStart(2, "0");
+
+      document.getElementById("hours").textContent =
+          String(hours).padStart(2, "0");
+
+      document.getElementById("minutes").textContent =
+          String(minutes).padStart(2, "0");
+
+      document.getElementById("seconds").textContent =
+          String(seconds).padStart(2, "0");
+  }
+
+  updateCountdown();
+
+  setInterval(updateCountdown, 1000);
+
+
+  /* =========================
+     DARK MODE
+     ========================= */
+
+  const themeToggle =
+      document.getElementById("theme-toggle");
+
+  const mobileThemeToggle =
+      document.getElementById("mobile-theme-toggle");
+
+  function updateThemeButtons() {
+
+      const dark =
+          document.body.classList.contains("dark-mode");
+
+      if (themeToggle) {
+          themeToggle.textContent =
+              dark ? "☀️" : "🌙";
+      }
+
+      if (mobileThemeToggle) {
+          mobileThemeToggle.textContent =
+              dark ? "☀️ Light Mode" : "🌙 Dark Mode";
+      }
+  }
+
+  function toggleTheme() {
+
+      document.body.classList.toggle("dark-mode");
+
+      const dark =
+          document.body.classList.contains("dark-mode");
+
+      localStorage.setItem(
+          "studec-theme",
+          dark ? "dark" : "light"
+      );
+
+      updateThemeButtons();
+  }
+
+  if (localStorage.getItem("studec-theme") !== "light") {
+    document.body.classList.add("dark-mode");
+  }
+
+  updateThemeButtons();
+
+  if (themeToggle) {
+      themeToggle.addEventListener(
+          "click",
+          toggleTheme
+      );
+  }
+
+  if (mobileThemeToggle) {
+      mobileThemeToggle.addEventListener(
+          "click",
+          toggleTheme
+      );
+  }
+
+
+  /* =========================
+     DYNAMIC NAVIGATION
+     ========================= */
+
+  const navbar =
+      document.getElementById("navbar");
+
+  const navContainer =
+      navbar.querySelector(".nav-container");
+
+  const navLinks =
+      document.getElementById("nav-links");
+
+  const desktopActions =
+      navbar.querySelector(".desktop-actions");
+
+  const mobileMenu =
+      document.getElementById("mobile-menu");
+
+  const mobileMenuToggle =
+      document.getElementById("mobile-menu-toggle");
+
+
+  function navigationFits() {
+
+      if (!navContainer || !navLinks || !desktopActions) {
+          return true;
+      }
+
+      const logo =
+          navContainer.querySelector(".logo-link");
+
+      const actions =
+          navContainer.querySelector(".nav-actions");
+
+      const available =
+          navContainer.clientWidth
+          - logo.offsetWidth
+          - actions.offsetWidth
+          - 70;
+
+      return navLinks.scrollWidth <= available;
+  }
+
+
+  function updateNavigation() {
+    // 1. Temporarily strip the compact class to reveal true physical widths
+    navbar.classList.remove("compact");
+
+    // 2. Measure if the natural desktop layout actually fits
+    if (!navigationFits()) {
+        // 3. It doesn't fit, so clamp it back to mobile mode immediately
+        navbar.classList.add("compact");
+    } else {
+        // 4. It fits naturally. Ensure mobile dropdowns are closed.
+        mobileMenu.classList.remove("open");
+        mobileMenuToggle.classList.remove("active");
+        mobileMenuToggle.setAttribute("aria-expanded", "false");
+    }
+}
+
+/* =========================
+   AUTO-CLOSE MENU ON SCROLL OUT
+   ========================= */
+
+function closeMobileMenu() {
+    mobileMenu.classList.remove("open");
+    mobileMenuToggle.classList.remove("active");
+    mobileMenuToggle.setAttribute("aria-expanded", "false");
+}
+
+const navbarVisibilityObserver = new IntersectionObserver(
+    ([entry]) => {
+        // If the navbar is no longer visible in the viewport, close the dropdown
+        if (!entry.isIntersecting) {
+            closeMobileMenu();
+        }
+    },
+    { threshold: 0 }
+);
+
+navbarVisibilityObserver.observe(navbar);
+
+
+  const navigationObserver =
+      new ResizeObserver(updateNavigation);
+
+  navigationObserver.observe(navContainer);
+
+  window.addEventListener(
+      "load",
+      updateNavigation
+  );
+
+  updateNavigation();
+
+
+  /* =========================
+     HAMBURGER MENU
+     ========================= */
+
+  mobileMenuToggle.addEventListener(
+      "click",
+      () => {
+
+          const isOpen =
+              mobileMenu.classList.toggle("open");
+
+          mobileMenuToggle.classList.toggle(
+              "active",
+              isOpen
+          );
+
+          mobileMenuToggle.setAttribute(
+              "aria-expanded",
+              String(isOpen)
+          );
+      }
+  );
+
+
+  mobileMenu
+      .querySelectorAll("a")
+      .forEach(link => {
+
+          link.addEventListener(
+              "click",
+              () => {
+
+                  mobileMenu.classList.remove(
+                      "open"
+                  );
+
+                  mobileMenuToggle.classList.remove(
+                      "active"
+                  );
+
+                  mobileMenuToggle.setAttribute(
+                      "aria-expanded",
+                      "false"
+                  );
+              }
+          );
+
+      });
+
+
+  /*
+   * Recalculate when fonts finish loading.
+   * This matters because the navigation width
+   * depends on the actual rendered font.
+   */
+
+  if (document.fonts) {
+      document.fonts.ready.then(
+          updateNavigation
+      );
+  }
+</script>
+
+</body>
+</html>
