@@ -1,8 +1,8 @@
-import os
+# V2.1
+
 import subprocess
 
 from fastapi import FastAPI, Request
-from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 import uvicorn
 from fastapi.staticfiles import StaticFiles
