@@ -1,3 +1,6 @@
+import os
+import subprocess
+
 from fastapi import FastAPI, Request
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
@@ -19,6 +22,9 @@ async def serve_homepage(request: Request):
     # Render the index.html template when visiting the root URL
     return templates.TemplateResponse("index.html", {"request": request})
 
+@app.get("/dev/pull")
+async def pull(request: Request):
+    return subprocess.run(["git", "pull"], capture_output=True)
 
 if __name__ == "__main__":
     # Run the server on http://127.0.0.1:8000
