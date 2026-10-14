@@ -3,8 +3,8 @@
     --bg-alt: #f3f3f3;
     --text: #222222;
     --muted: #666666;
-    --accent: #e5a72f;
-    --accent-dark: #c98d18;
+    --accent: #1D4A8E;
+    --accent-dark: #008ec2;
     --nav-bg: rgba(0, 0, 0, 0.82);
     --nav-text: #ffffff;
     --btn-text: #ffffff;
@@ -655,7 +655,7 @@ body.dark-mode {
 .fee-card .price {
     margin: 0 0 10px;
 
-    color: var(--accent);
+    color: var(--accent-dark);
 
     font-family: 'Raleway', sans-serif;
     font-size: clamp(1.7rem, 4vw, 2.7rem);
@@ -739,7 +739,7 @@ body.dark-mode {
 .step-number {
     margin-bottom: 12px;
 
-    color: var(--accent);
+    color: var(--accent-dark);
 
     font-family: 'Raleway', sans-serif;
     font-size: clamp(2rem, 5vw, 3rem);
