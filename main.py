@@ -1,5 +1,3 @@
-# V2.1
-
 import subprocess
 
 from fastapi import FastAPI, Request
