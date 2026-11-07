@@ -1,5 +1,3 @@
-import os
-import signal
 import subprocess
 
 from fastapi import FastAPI, Request
@@ -23,8 +21,7 @@ async def serve_homepage(request: Request):
 
 @app.get("/dev/pull")
 async def pull(request: Request):
-    subprocess.run(["git", "pull"], capture_output=True)
-    os.kill(os.getpid(), signal.SIGTERM)
+    return subprocess.run(["git", "pull"], capture_output=True)
 
 if __name__ == "__main__":
     # Run the server on http://127.0.0.1:8000
