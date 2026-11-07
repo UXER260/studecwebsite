@@ -21,7 +21,8 @@ async def serve_homepage(request: Request):
 
 @app.get("/dev/pull")
 async def pull(request: Request):
-    return f"""DIT IS EEN TEST \n\n{subprocess.run(["git", "pull"], capture_output=True)}"""
+    subprocess.run(["git", "pull"], capture_output=True)
+    return subprocess.run(["killall", "Python"])
 
 if __name__ == "__main__":
     # Run the server on http://127.0.0.1:8000
