@@ -3,8 +3,8 @@
     --bg-alt: #f3f3f3;
     --text: #222222;
     --muted: #666666;
-    --accent: #1D4A8E;
-    --accent-dark: #008ec2;
+    --accent: #e5a72f;
+    --accent-dark: #c98d18;
     --nav-bg: rgba(0, 0, 0, 0.82);
     --nav-text: #ffffff;
     --btn-text: #ffffff;
@@ -563,6 +563,10 @@ body.dark-mode {
     text-align: center;
 }
 
+.construction-notice {
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+}
+
 .quote-banner p {
     max-width: 900px;
     margin: 0 auto;
@@ -571,6 +575,7 @@ body.dark-mode {
     font-size: clamp(1.1rem, 2.5vw, 1.7rem);
     font-weight: 500;
     line-height: 1.4;
+
 }
 
 /* =========================
@@ -655,7 +660,7 @@ body.dark-mode {
 .fee-card .price {
     margin: 0 0 10px;
 
-    color: var(--accent-dark);
+    color: var(--accent);
 
     font-family: 'Raleway', sans-serif;
     font-size: clamp(1.7rem, 4vw, 2.7rem);
@@ -739,7 +744,7 @@ body.dark-mode {
 .step-number {
     margin-bottom: 12px;
 
-    color: var(--accent-dark);
+    color: var(--accent);
 
     font-family: 'Raleway', sans-serif;
     font-size: clamp(2rem, 5vw, 3rem);

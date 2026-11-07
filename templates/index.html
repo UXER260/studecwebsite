@@ -2,6 +2,77 @@
 <html lang="en">
 
 <head>
+
+  <script type="application/ld+json">
+
+
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://studec27.org/#website",
+    "name": "StuDEC 2027",
+    "url": "https://studec27.org",
+    "creator": {
+      "@type": "Person",
+      "name": "Camillo Yoel de Jong",
+      "jobTitle": "IT Specialist & Digital Product Developer"
+    },
+    "author": {
+      "@type": "Organization",
+      "@id": "https://studec27.org/#organising-team",
+      "name": "StuDEC 2027 Organising Team",
+      "description": "The student organising team from De Vrije Ruimte The Hague, responsible for organising StuDEC 2027."
+    },
+    "copyrightHolder": {
+      "@type": "Organization",
+      "name": "De Vrije Ruimte The Hague",
+      "url": "https://www.devrijeruimte.org/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://studec27.org/#webpage",
+    "url": "https://studec27.org",
+    "name": "StuDEC 2027",
+    "isPartOf": {
+      "@id": "https://studec27.org/#website"
+    },
+    "mainEntity": {
+      "@id": "https://studec27.org/#event"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "@id": "https://studec27.org/#event",
+    "name": "StuDEC 2027 (Students' Democratic Education Conference)",
+    "startDate": "2027-03-13",
+    "endDate": "2027-03-18",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "organizer": {
+      "@id": "https://studec27.org/#organising-team"
+    },
+    "location": {
+      "@type": "Place",
+      "name": "Stayokay Hostel Texel",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Haffelderweg 29",
+        "addressLocality": "Texel",
+        "postalCode": "1791 AS",
+        "addressCountry": "NL"
+      }
+    },
+    "description": "The international gathering for students from democratic schools from around the world to exchange knowledge, experience, and creative ideas."
+  }
+]
+
+  </script>
+
+
   <meta charset="UTF-8">
   <link rel="icon" href="{{ url_for('static', path='images/IMG_1834-final-768x806.png') }}">
 
@@ -193,7 +264,7 @@
 
   <p>
   <h1>Welcome to the official website of StuDEC 2027!</h1>
-  <h3>👷This website is under construction 🏗. More information will follow.</h3>
+  <h3 class="construction-notice">👷This website is under construction 🏗. More information will follow.</h3>
   </p>
 
 </section>
