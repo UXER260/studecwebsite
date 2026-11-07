@@ -14,7 +14,6 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 # Set up the template engine
 templates = Jinja2Templates(directory="templates")
 
-
 @app.get("/")
 async def serve_homepage(request: Request):
     # Render the index.html template when visiting the root URL
